@@ -8,8 +8,8 @@ import java.nio.charset.StandardCharsets;
 
 public class JdkDocClient {
     public static void main(String[] args) throws Exception {
-        String topic = "java.util.stream.Stream.map"; // you can change dynamically
-        String query = "http://localhost:8080/query?topic=" +
+        String topic = "java.time.LocalDate.now"; // you can change dynamically
+        String query = "http://localhost:8081/query?topic=" +
                 java.net.URLEncoder.encode(topic, StandardCharsets.UTF_8);
 
         HttpClient client = HttpClient.newHttpClient();
